@@ -366,7 +366,8 @@ export default {
         realTimePower: '',
         realTimeVolt: '',
         status: '',
-        mark: ''
+        mark: '',
+        factoryDeviceList: []
       }
       //
       this.dialogTitle = '添加能效检测点'

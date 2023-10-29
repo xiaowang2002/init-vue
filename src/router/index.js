@@ -120,7 +120,22 @@ export const constantRoutes = [
         component: () => import('../views/technology'),
         name: 'technology',
         meta: { title: '工艺建模', icon: 'dashboard', affix: true }
-      },
+      }
+    ]
+  },
+  {
+    path: '/vision',
+    component: Layout,
+    alwaysShow: true,
+    meta: { title: '可视化平台', icon: 'dashboard', affix: true },
+    children: [
+      {
+        path: 'vision',
+        // @ === /src
+        component: () => import('../views/vision'),
+        name: 'vision',
+        meta: { title: '可视化平台', icon: 'dashboard', affix: true }
+      }
     ]
   },
   {
